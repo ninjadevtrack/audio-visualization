@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio Visualization</title>
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <input type="file" id="file-input" />
+    <div class="cover-holder"><div class="vis-circle"></div></div>
+    <figure class="stage">
+      <img id="cover" alt="" />
+      <canvas class="music-visuals"></canvas>
+      <figcaption class="mark">
+        <time datetime="" class="info fade">
+          <span id="album"></span>
+        </time>
+        <p class="description fade">
+          <strong><span id="song"></span> |</strong> <span id="artist"></span>
+        </p>
+      </figcaption>
+    </figure>
+
+    <div class="search">
+      <div class="controls">
+        <div class="left">
+          <button id="open-file">Open file</button>
+          <button id="show-audio">Show audio</button>
+        </div>
+        <div class="right">
+          <button id="play-btn">Play</button>
+          <button id="prev-btn">Previous</button>
+          <button id="next-btn">Next</button>
+        </div>
+      </div>
+      <audio controls></audio>
+    </div>
+
+    <script src="./index.js" type="text/javascript"></script>
+  </body>
+</html>
